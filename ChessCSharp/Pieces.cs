@@ -6,7 +6,7 @@ namespace ChessCSharp
     public class Pieces
     {
         private int x, y;
-        private List<int> move;
+        private List<int[]> move;
 
         public Pieces()
         {
@@ -29,14 +29,14 @@ namespace ChessCSharp
         {
             y = num;
         }
-        public List<int> getMove()
+        public List<int[]> getMove()
         {
             return move;
         }
         public void setMove(int numX, int numY)
         {
-            move.Add()
-
+            int[] possibleMove = { numX, numY };
+            move.Add(possibleMove);
         }
 
     }
