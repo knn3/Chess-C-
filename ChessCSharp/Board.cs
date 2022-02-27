@@ -3,8 +3,7 @@ namespace ChessCSharp
 {
     public class Board
     {
-        private int col;
-        private int row;
+        Pieces
 
         public Board()
         {
