@@ -7,11 +7,29 @@ namespace ChessCSharp
     {
         private int x, y;
         private List<int[]> move;
+        private int value;
 
         public Pieces()
         {
             x = y = 0;
+            value = 0;
             move = new List<int[]>();
+        }
+
+        public Pieces(int x, int y, int value)
+        {
+            this.x = x;
+            this.y = y;
+            this.value = value;
+        }
+
+        public int getValue()
+        {
+            return value;
+        }
+        public void setValue(int num)
+        {
+            value = num;
         }
 
         public int getX() 
