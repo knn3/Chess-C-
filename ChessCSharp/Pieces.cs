@@ -11,6 +11,7 @@ namespace ChessCSharp
         public Pieces()
         {
             x = y = 0;
+            move = new List<int[]>();
         }
 
         public int getX() 
@@ -29,11 +30,11 @@ namespace ChessCSharp
         {
             y = num;
         }
-        public List<int[]> getMove()
+        public List<int[]> getArrayMove()
         {
             return move;
         }
-        public void setMove(int numX, int numY)
+        public void setArrayMove(int numX, int numY)
         {
             int[] possibleMove = { numX, numY };
             move.Add(possibleMove);

@@ -1,9 +1,9 @@
 ﻿using System;
 namespace ChessCSharp
 {
+    /*
     public class Board
     {
-        Pieces
 
         public Board()
         {
@@ -22,4 +22,5 @@ namespace ChessCSharp
         }
 
     }
+    */
 }

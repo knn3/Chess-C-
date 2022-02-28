@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ChessCSharp
 {
@@ -6,9 +7,21 @@ namespace ChessCSharp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello World");
             Pieces test = new Pieces();
-            //for (int i = 0; i < test.getMove();i++)
-            Console.WriteLine(test.getMove());
+            
+            test.getArrayMove().ForEach((move) =>
+            {
+                Console.WriteLine(move[0]);
+                Console.WriteLine(move[1]);
+            });
+            
+            test.setArrayMove(0, 1);
+            test.getArrayMove().ForEach((T) =>
+            {
+                Console.WriteLine(T[0]);
+                Console.WriteLine(T[1]);
+            });
         }
     }
 }
